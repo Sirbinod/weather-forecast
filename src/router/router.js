@@ -9,13 +9,13 @@ const routes = [
   {
     path: "/",
     component: Home,
-    beforeEnter: (to, from, next) => {
-      if (auth.currentUser) {
-        next();
-      } else {
-        next("/signin");
-      }
-    },
+    // beforeEnter: (to, from, next) => {
+    //   if (auth.currentUser) {
+    //     next();
+    //   } else {
+    //     next("/signin");
+    //   }
+    // },
   },
   { path: "/signin", component: Signin },
   { path: "/signup", component: Signup },
